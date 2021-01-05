@@ -1,0 +1,40 @@
+<?php
+
+// class parent
+class kendaraan{
+
+    // property class kendaraan
+    public $beat_saya;
+
+    // method pada class kendaraan
+    function berikendaraan($saya) {
+        $this->beat_saya=$saya;
+    }
+
+}
+
+// class turunan atau sub class dari class kendaraan
+// kita menghubungkan class dengan syntax extends
+class mobil extends kendaraan{
+
+    // property class mobil
+    public $kijang inova_mobil;
+
+    // method pada class teman
+    function berikendaraanmobil($mobil) {
+       $this->kijang inova_mobil=$mobil;
+    }
+}
+
+// instansiasi class mobil
+$malasngoding = new mobil;
+
+// method beri kendaraan adalah method pada class kendaraan
+$malasngoding->berikendaraan(" kijang Inova mobil saya ");
+$malasngoding->berikendaraanmobil(" kijang Inova ");
+
+// menampilkan isi property
+echo "Kijang Inova:" . $malasngoding->kijang inova_saya . "<br/>;
+echo "Kijang Inova mobil saya :" . $malasngoding->kijang inova_mobil;
+
+?>
