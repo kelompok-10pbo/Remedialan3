@@ -1,0 +1,9 @@
+<?php
+//cara penulisan class dan property OOP PHP
+class motor {           //class motor
+    var $warna;         //property hitam
+    var $merek;         //property beat
+    var $cc             //property 180
+
+}
+?>
